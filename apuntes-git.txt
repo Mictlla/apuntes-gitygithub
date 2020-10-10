@@ -53,7 +53,7 @@ git status = comando para visualisar el estado de los archivos (tracked o untrac
 
 
 
-git log = comando para visualisar el historial de cambios realizados al archivo seleccionado (todas las versiones del mismo), tambien despliega el tag de cada version para usos posteriores
+git log = comando para visualisar el historial de los commit realizados al archivo seleccionado (todas las versiones del mismo), tambien despliega el tag del commit de cada version para usos posteriores
 	con otros comandos ...
 
 
@@ -68,6 +68,13 @@ git show = comando que muestra los ultimos cambios realizados al documento selec
 
 	cuantos bytes cambiaron
 	contenido modificado en el archivo como la eliminacion de alguna palabra o por el contrario si se agrego algo nuevo
+
+git diff = comando para ver las diferencias entre cambios realizados
+	para comparar los cambios se debe seleccionar el tag del commit mostrado por el comando $git log archivo.txt de los 2 archivos que se quieren comparar.
+
+	$git diff tagcommit tagcommit
+
+
 
 
 
