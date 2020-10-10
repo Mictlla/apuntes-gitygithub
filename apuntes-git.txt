@@ -1,4 +1,6 @@
-git init = para iniciar o crear la repositorio(carpeta) de git en el directorio del proyecto que trabajara por versiones
+﻿git init = para iniciar o crear la repositorio(carpeta) de git en el directorio del proyecto que trabajara por versiones
+
+
 
 
 
@@ -6,7 +8,11 @@ git init = para iniciar o crear la repositorio(carpeta) de git en el directorio 
 
 git add = comando para agregar a staging el o los documentos/directorios seleccionados antes de poder realizar un commit 
 
+	
+
 	$git add "archivo"  -- tambien se puede usar . para asignar la carpeta actual para agregar
+
+
 
 
 
@@ -17,7 +23,11 @@ git commit = comando para agregar de forma definitiva al repositorio el o los do
 
 	
 
-	practica limpia: agregar siempre un comentario de los cambios efectuados al archivo para que cualquier persona con acceso al repositorio pueda entender que cambios se han realizado.
+	
+
+	practica limpia: agregar siempre un comentario de los cambios efectuados al archivo para que cualquier persona con acceso al repositorio pueda entender que 	cambios se han realizado.
+
+
 
 
 
@@ -25,23 +35,39 @@ git commit = comando para agregar de forma definitiva al repositorio el o los do
 git rm --cached = comando para remover el archivo seleccionado de la memoria ram (staging) cuando esté habia sido agregado mediante el comando $git add pero sin haber efectuado aun el
  comando $git commit evitando asi agregar cambios no deseados al o los archivos de la rama seleccionados.
 	
+	
 	tambien se entiende que el archivo seleccionado paso de tracked a untracked.
+
+
 
 
 git config --global user.name "nombre de usuari" = comando para asignar nombre de usuario de git
 
+
+
 git config --global user.email "nombre@correo.com" = comando para asignar correo electronico al usuario de git
 
-git status = comando para visualisar el estado de los archivos tracked y si hay o no cambios que deban ser agregados mediante el comando $git commit
+
+
+git status = comando para visualisar el estado de los archivos (tracked o untracked) y si hay o no cambios que deban ser agregados mediante el comando $git commit
+
+
 
 git log = comando para visualisar el historial de cambios realizados al archivo seleccionado (todas las versiones del mismo), tambien despliega el tag de cada version para usos posteriores
 	con otros comandos ...
 
 
 
+git show = comando que muestra los ultimos cambios realizados al documento seleccionado, las descripciones que podemos ver con este comando son desde;
 
+	el ultimo commit realizado
 
+	el mensaje colocado en dicho commit
 
+	las diferentes versiones del archivo
+
+	cuantos bytes cambiaron
+	contenido modificado en el archivo como la eliminacion de alguna palabra o por el contrario si se agrego algo nuevo
 
 
 
@@ -57,9 +83,9 @@ Glosario
 
 
 
-
-
 repositorio = carpeta que contiene los cambios realizados a los archivos durante y al final del proyecto
+
+
 
 
 
@@ -71,13 +97,19 @@ staging = espacio en la memoria ram donde se guardan de manera  temporal los arc
 
 
 
+
+
 untracked = archivo que no a sido agregado a staging y por lo tanto git no puede saber si existe o tiene cambios
 
 
 
 
 
+
+
 tracked = archivo que ha sido agregado a staging y por lo tanto git conoce de su exitencia y los cambios que se realizan
+
+
 
 
 
@@ -90,9 +122,13 @@ la rama por default o principal es master( actualmente cambio a main), al crear 
 
 	
 
+	
 	se pueden hacer tantas ramas como se quiera o sea necesario
 	
+	
 	tambien se pueden crear ramas de una version en especifico y no necesariamente de la ultima.
+
+
 
 
 
