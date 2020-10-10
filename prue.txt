@@ -8,3 +8,4 @@ ads
 
 preuba para porobar el soft reset
 
+probando ahora wl comando checkout
