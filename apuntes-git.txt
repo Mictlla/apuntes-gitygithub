@@ -98,5 +98,5 @@ la rama por default o principal es master( actualmente cambio a main), al crear 
 
 
 
-head =
+head = hace referncia a la version mas reciente en la rama
 
