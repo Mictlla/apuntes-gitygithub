@@ -2,7 +2,11 @@ git init = para iniciar o crear la repositorio(carpeta) de git en el directorio 
 
 
 
+
+
 git add = comando para agregar a staging el o los documentos/directorios seleccionados antes de poder realizar un commit 
+
+
 
 
 
@@ -10,7 +14,17 @@ git commit = comando para agregar de forma definitiva al repositorio el o los do
 
 	
 
+	
+
 	practica limpia: agregar siempre un comentario de los cambios efectuados al archivo para que cualquier persona con acceso al repositorio pueda entender que cambios se han realizado.
+
+
+
+
+git rm = comando para remover el archivo de staging si no se quiere agregar los cambios al repositorio.
+
+
+
 
 
 
@@ -27,11 +41,17 @@ Glosario
 
 
 
+
+
 repositorio = carpeta que contiene los cambios realizados a los archivos durante y al final del proyecto
 
 
 
-staging = espacio en la memoria ram donde se guardan de manera  temporal los archivos agregados mediante el comando $git add [carpeta seleccionada], para mover de la ram al disco duro o ubicacion del repositorio y guardar de forma definitiva los cambios usar $git commid -m "nota sobre los cambios"
+
+
+staging = espacio en la memoria ram donde se guardan de manera  temporal los archivos agregados mediante el comando $git add [carpeta seleccionada], para mover de la ram al disco duro o ubicacion del repositorio y guardar de forma definitiva los cambios usar $git commid -m "nota sobre los cambios
+
+"
 
 
 
@@ -39,7 +59,11 @@ untracked = archivo que no a sido agregado a staging y por lo tanto git no puede
 
 
 
+
+
 tracked = archivo que ha sido agregado a staging y por lo tanto git conoce de su exitencia y los cambios que se realizan
+
+
 
 
 
@@ -48,8 +72,13 @@ la rama por default o principal es master( actualmente cambio a main), al crear 
 	
 	
 
+	
+
 	se pueden hacer tantas ramas como se quiera o sea necesario
+	
 	tambien se pueden crear ramas de una version en especifico y no necesariamente de la ultima.
+
+
 
 
 
