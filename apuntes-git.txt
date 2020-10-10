@@ -56,6 +56,7 @@ git status = comando para visualisar el estado de los archivos (tracked o untrac
 git log = comando para visualisar el historial de los commit realizados al archivo seleccionado (todas las versiones del mismo), tambien despliega el tag del commit de cada version para usos posteriores
 	con otros comandos ...
 
+	$git log --stat = comando que permite ver con mayor detalle los commits realizados asi como las carpetas y archivos que fueron modificados en cada commit.
 
 
 git show = comando que muestra los ultimos cambios realizados al documento seleccionado, las descripciones que podemos ver con este comando son desde;
