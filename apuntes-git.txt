@@ -99,7 +99,7 @@ git checkout = comando que nos permite visualisar la version de nuestra eleccion
 	$git checkout master archivo.txt 
 		nos regresa a la version actual del archivo sin agregar modificaciones
 
-
+sss
 
 
 
