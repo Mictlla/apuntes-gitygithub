@@ -74,6 +74,22 @@ git diff = comando para ver las diferencias entre cambios realizados
 
 	$git diff tagcommit tagcommit
 
+git reset = comando para regresar en el tiempo, nos permite volver a una version anterior de nuestro repositorio sin importar que tan antigua sea la version
+	basta con elegir el tagcommit de la version a la que queremos retornar.
+
+	$git reset tagcommit --hard
+		elimina todas las modificaciones al archivo seleccionado tomando como punto de "restauracion" el tagcommit seleccionado al igual que el historial del log
+	
+	$git reset tagcommit --soft
+		elimina solo las entradas del historial log hasta el tagcommit seleccionado, las modificaciones realizadas al archivo seleccionado aun se mantienen pero no asi los commits realizados a posterior del tagcommit seleccionado.
+		no elimina la informacion agregada a staging mediante $git add archivo.txt y, de hecho, permite agregar dichas modificaciones mediante commit si aun se quiere o eliminar usando rm.
+
+git mv = si usamos el comando habitual para mover archivos dentro de la carpeta de nuestro proyecto el tracking de git se pierde
+	pero si usamos este comando para mover archivos dentro de la carpeta que esta siendo monitoriada por git el tracking no se perdera.
+
+
+
+
 
 
 
