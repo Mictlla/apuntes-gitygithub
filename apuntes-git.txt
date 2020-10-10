@@ -88,7 +88,16 @@ git reset = comando para regresar en el tiempo, nos permite volver a una version
 git mv = si usamos el comando habitual para mover archivos dentro de la carpeta de nuestro proyecto el tracking de git se pierde
 	pero si usamos este comando para mover archivos dentro de la carpeta que esta siendo monitoriada por git el tracking no se perdera.
 
+git checkout = comando que nos permite visualisar la version de nuestra eleccion sin importar cuan antigua sea dicha version o commit eligiendo el tagcommit de nuestro interes desde lo desplegado con el comando $git log archivo.txt
+	la ejecucion del comando no significa que el archivo elegido vaya a ser modificado con el contenido de dicha version
 
+	$git checkout tagcommit archivo.txt
+		nos permite visualisar el archivo seleccionado en la version que señala el tagcommit
+		si quisieramos traer la version que elgimos junto al contenido de este mismo debemos usar commit pero esto tendra como resultado borrar todo cambio o avanze de la version mas actual y si eso es lo que se desea no hay problema
+		 de lo contrario usar con precaucion
+
+	$git checkout master archivo.txt 
+		nos regresa a la version actual del archivo sin agregar modificaciones
 
 
 
