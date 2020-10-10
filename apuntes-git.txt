@@ -37,6 +37,8 @@ git rm --cached = comando para remover el archivo seleccionado de la memoria ram
 	
 	
 	tambien se entiende que el archivo seleccionado paso de tracked a untracked.
+	el archivo se mantiene en el disco duro pero git es incapaz de agregarlo al repositorio aunque se realize $git add . o $git add archivo-untracked.txt
+	
 
 
 
