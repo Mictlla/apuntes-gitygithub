@@ -6,6 +6,7 @@ git init = para iniciar o crear la repositorio(carpeta) de git en el directorio 
 
 git add = comando para agregar a staging el o los documentos/directorios seleccionados antes de poder realizar un commit 
 
+	$git add "archivo"  -- tambien se puede usar . para asignar la carpeta actual para agregar
 
 
 
@@ -21,7 +22,22 @@ git commit = comando para agregar de forma definitiva al repositorio el o los do
 
 
 
-git rm = comando para remover el archivo de staging si no se quiere agregar los cambios al repositorio.
+git rm --cached = comando para remover el archivo seleccionado de la memoria ram (staging) cuando esté habia sido agregado mediante el comando $git add pero sin haber efectuado aun el
+ comando $git commit evitando asi agregar cambios no deseados al o los archivos de la rama seleccionados.
+	
+	tambien se entiende que el archivo seleccionado paso de tracked a untracked.
+
+
+git config --global user.name "nombre de usuari" = comando para asignar nombre de usuario de git
+
+git config --global user.email "nombre@correo.com" = comando para asignar correo electronico al usuario de git
+
+git status = comando para visualisar el estado de los archivos tracked y si hay o no cambios que deban ser agregados mediante el comando $git commit
+
+git log = comando para visualisar el historial de cambios realizados al archivo seleccionado (todas las versiones del mismo), tambien despliega el tag de cada version para usos posteriores
+	con otros comandos ...
+
+
 
 
 
