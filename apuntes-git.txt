@@ -120,6 +120,8 @@ git merge = actualiza nuestros archivos locales del directorio local con el repo
 git pull = fusion de los comandos fetch y merge
 		mantiene una version actualizada del repositorio
 
+git branch = nos muestra las ramas que tenemos en nuestro repositorio ademas de indicarnos la rama donde estamos localizados
+
 
 
 
