@@ -38,10 +38,12 @@ git rm --cached = comando para remover el archivo seleccionado de la memoria ram
 	
 	tambien se entiende que el archivo seleccionado paso de tracked a untracked.
 	el archivo se mantiene en el disco duro pero git es incapaz de agregarlo al repositorio aunque se realize $git commit -m "nota"
-	
 
+git rm --force = elimina de git y el disco duro el archivo
+	se puede recuperar pero con comandos avanzados.
 
-
+git restore --staged = recupera un archivo borrado con --force
+	$git restore --staged prueba-borrar.txt
 
 
 git config --global user.name "nombre de usuari" = comando para asignar nombre de usuario de git
@@ -87,6 +89,10 @@ git reset = comando para regresar en el tiempo, nos permite volver a una version
 	$git reset tagcommit --soft
 		elimina solo las entradas del historial log hasta el tagcommit seleccionado, las modificaciones realizadas al archivo seleccionado aun se mantienen pero no asi los commits realizados a posterior del tagcommit seleccionado.
 		no elimina la informacion agregada a staging mediante $git add archivo.txt y, de hecho, permite agregar dichas modificaciones mediante commit si aun se quiere o eliminar usando rm.
+	
+	$git reset HEAD = sacar archivos de staging, no los borra, solo quita los ultimos cambios para no enviarlos en el ultimo commit
+		a menos que se quieran agregar de nuevo con git add
+
 
 git mv = si usamos el comando habitual para mover archivos dentro de la carpeta de nuestro proyecto el tracking de git se pierde
 	pero si usamos este comando para mover archivos dentro de la carpeta que esta siendo monitoriada por git el tracking no se perdera.
