@@ -109,7 +109,7 @@ git checkout = comando que nos permite visualisar la version de nuestra eleccion
 	$git checkout master archivo.txt 
 		nos regresa a la version actual del archivo sin agregar modificaciones
 
-	$git checkout branch = nos permite movernos entre ramas
+	$git checkout seleccionar-branch = nos permite movernos entre ramas
 
 
 git clone url = comando que nos permite clonar la carpeta master del repositorio remoto en nuestro equipo, tanto el directorio de trabajo como el repositorio local junto a los cambios histricos se clonan igual
