@@ -115,6 +115,8 @@ git checkout = comando que nos permite visualisar la version de nuestra eleccion
 git clone url = comando que nos permite clonar la carpeta master del repositorio remoto en nuestro equipo, tanto el directorio de trabajo como el repositorio local junto a los cambios histricos se clonan igual
 
 git push = envia todo cambio que hayamos realizado en nuestro repositorio local al repositorio remoto, tener en cuenta que puede saltar algun conflicto si varias personas editaron el mismo archivo pero con diferentes valores
+	$git push origin main = enviamos el repositorio local ubicado en la rama/branch main al repositorio remoto donde tambien se ecuentra una rama/branch con el nombre main
+
 
 git fetch = trae desde el repositorio remoto atualizaciones o modificaciones hechas en dicho repositorio a nuestro repositorio local pero no actualiza nuestro directorio de trabajo
 
@@ -125,13 +127,13 @@ git merge = actualiza nuestros archivos locales del directorio local con el repo
 
 git pull = fusion de los comandos fetch y merge
 		mantiene una version actualizada del repositorio
+		
+		$git pull origin main = traemos del repositorio remoto a nuestra rama/branch main los archivos que aun no sincronizamos de forma local
+		$git pull origin main --allow-unrelated-histories = fuersa la integracion de historias del origen remoto en el repositorio local 
 
 git branch = nos muestra las ramas que tenemos en nuestro repositorio ademas de indicarnos la rama donde estamos localizados
 
-
-
-
-
+git remote add origin "url" = comando para agregar un origen remoto, en este caso usamos una url de github
 
 
 
@@ -200,3 +202,4 @@ master = rama principal donde se encuentra toda la historia de commits
 
 head = hace referncia a la version (commit) mas reciente en la rama
 
+historias = conjunto de commits
