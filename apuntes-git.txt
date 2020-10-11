@@ -181,24 +181,14 @@ tracked = archivo que ha sido agregado a staging y por lo tanto git conoce de su
 
 
 
-rama = hace referencia a las diferentes instancias del repositorio, 
-la rama por default o principal es master( actualmente cambio a main), al crear mas ramas estas estaran basadas en la ultima actualizacion realizada al repositorio principal mediante $git commit -m
-	
-	
-
-	
-
+rama = copia del ultimo commit y la rama por default o principal es master( actualmente cambio a main), al crear mas ramas estas estaran basadas en la ultima actualizacion realizada al repositorio principal mediante $git commit -m
+	hace referencia a las diferentes instancias del repositorio
 	
 	se pueden hacer tantas ramas como se quiera o sea necesario
-	
-	
+		
 	tambien se pueden crear ramas de una version en especifico y no necesariamente de la ultima.
 
+master = rama principal donde se encuentra toda la historia de commits
 
-
-
-
-
-
-head = hace referncia a la version mas reciente en la rama
+head = hace referncia a la version (commit) mas reciente en la rama
 
