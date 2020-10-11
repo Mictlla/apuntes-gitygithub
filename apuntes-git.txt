@@ -126,7 +126,7 @@ Glosario
 
 
 repositorio = carpeta que contiene los cambios realizados a los archivos durante y al final del proyecto
-
+	base de datos de cambios historicos
 
 
 
