@@ -1,40 +1,17 @@
-﻿git init = para iniciar o crear la repositorio(carpeta) de git en el directorio del proyecto que trabajara por versiones
+							Apuntes del curso de Git&GitHub
 
-
-
-
-
-
+git init = para iniciar o crear la repositorio(carpeta) de git en el directorio del proyecto que trabajara por versiones
 
 git add = comando para agregar a staging el o los documentos/directorios seleccionados antes de poder realizar un commit 
 
-	
-
 	$git add "archivo"  -- tambien se puede usar . para asignar la carpeta actual para agregar
-
-
-
-
-
 
 git commit = comando para agregar de forma definitiva al repositorio el o los documentos seleccionados mas los cambios efectuados en estos, es el comando que "crea" las "nuevas" versiones de los archivos modificados y agregarlos al repositorio.
 
-	
-
-	
-
-	
-
-	practica limpia: agregar siempre un comentario de los cambios efectuados al archivo para que cualquier persona con acceso al repositorio pueda entender que 	cambios se han realizado.
-
-
-
-
-
+	practica limpia: agregar siempre un comentario de los cambios efectuados al archivo para que cualquier persona con acceso al repositorio pueda entender que 	cambios 	se han realizado.
 
 git rm --cached = comando para remover el archivo seleccionado de la memoria ram (staging) cuando esté habia sido agregado mediante el comando $git add pero sin haber efectuado aun el
  comando $git commit evitando asi agregar cambios no deseados al o los archivos de la rama seleccionados.
-	
 	
 	tambien se entiende que el archivo seleccionado paso de tracked a untracked.
 	el archivo se mantiene en el disco duro pero git es incapaz de agregarlo al repositorio aunque se realize $git commit -m "nota"
@@ -45,34 +22,23 @@ git rm --force = elimina de git y el disco duro el archivo
 git restore --staged = recupera un archivo borrado con --force
 	$git restore --staged prueba-borrar.txt
 
-
 git config --global user.name "nombre de usuari" = comando para asignar nombre de usuario de git
-
-
 
 git config --global user.email "nombre@correo.com" = comando para asignar correo electronico al usuario de git
 
-
-
 git status = comando para visualisar el estado de los archivos (tracked o untracked) y si hay o no cambios que deban ser agregados mediante el comando $git commit
-
-
 
 git log = comando para visualisar el historial de los commit realizados al archivo seleccionado (todas las versiones del mismo), tambien despliega el tag del commit de cada version para usos posteriores
 	con otros comandos ...
 
 	$git log --stat = comando que permite ver con mayor detalle los commits realizados asi como las carpetas y archivos que fueron modificados en cada commit.
 
-
 git show = comando que muestra los ultimos cambios realizados al documento seleccionado, las descripciones que podemos ver con este comando son desde;
 	nos indica donde estamos localizados (branch) señalando con HEAD dicha ubicacion
 
 	el ultimo commit realizado
-
 	el mensaje colocado en dicho commit
-
 	las diferentes versiones del archivo
-
 	cuantos bytes cambiaron
 	contenido modificado en el archivo como la eliminacion de alguna palabra o por el contrario si se agrego algo nuevo
 |
@@ -88,12 +54,11 @@ git reset = comando para regresar en el tiempo, nos permite volver a una version
 		elimina todas las modificaciones al archivo seleccionado tomando como punto de "restauracion" el tagcommit seleccionado al igual que el historial del log
 	
 	$git reset tagcommit --soft
-		elimina solo las entradas del historial log hasta el tagcommit seleccionado, las modificaciones realizadas al archivo seleccionado aun se mantienen pero no asi los commits realizados a posterior del tagcommit seleccionado.
-		no elimina la informacion agregada a staging mediante $git add archivo.txt y, de hecho, permite agregar dichas modificaciones mediante commit si aun se quiere o eliminar usando rm.
+		elimina solo las entradas del historial log hasta el tagcommit seleccionado, las modificaciones realizadas al archivo seleccionado aun se mantienen pero no asi 		los commits realizados a posterior del tagcommit seleccionado.
+		no elimina la informacion agregada a staging mediante $git add archivo.txt y, de hecho, permite agregar dichas modificaciones mediante commit si aun se quiere 			eliminar usando rm.
 	
 	$git reset HEAD = sacar archivos de staging, no los borra, solo quita los ultimos cambios para no enviarlos en el ultimo commit
 		a menos que se quieran agregar de nuevo con git add
-
 
 git mv = si usamos el comando habitual para mover archivos dentro de la carpeta de nuestro proyecto el tracking de git se pierde
 	pero si usamos este comando para mover archivos dentro de la carpeta que esta siendo monitoriada por git el tracking no se perdera.
@@ -103,27 +68,24 @@ git checkout = comando que nos permite visualisar la version de nuestra eleccion
 
 	$git checkout tagcommit archivo.txt
 		nos permite visualisar el archivo seleccionado en la version que señala el tagcommit
-		si quisieramos traer la version que elgimos junto al contenido de este mismo debemos usar commit pero esto tendra como resultado borrar todo cambio o avanze de la version mas actual y si eso es lo que se desea no hay problema
-		 de lo contrario usar con precaucion
+		si quisieramos traer la version que elgimos junto al contenido de este mismo debemos usar commit pero esto tendra como resultado borrar todo cambio o avanze de 		la version mas actual y si eso es lo que se desea no hay problema
+		de lo contrario usar con precaucion
 
 	$git checkout master archivo.txt 
 		nos regresa a la version actual del archivo sin agregar modificaciones
 
 	$git checkout seleccionar-branch = nos permite movernos entre ramas
 
-
 git clone url = comando que nos permite clonar la carpeta master del repositorio remoto en nuestro equipo, tanto el directorio de trabajo como el repositorio local junto a los cambios histricos se clonan igual
 
 git push = envia todo cambio que hayamos realizado en nuestro repositorio local al repositorio remoto, tener en cuenta que puede saltar algun conflicto si varias personas editaron el mismo archivo pero con diferentes valores
 	$git push origin main = enviamos el repositorio local ubicado en la rama/branch main al repositorio remoto donde tambien se ecuentra una rama/branch con el nombre main
-
 
 git fetch = trae desde el repositorio remoto atualizaciones o modificaciones hechas en dicho repositorio a nuestro repositorio local pero no actualiza nuestro directorio de trabajo
 
 git merge = actualiza nuestros archivos locales del directorio local con el repositorio local el cual se actualizo con fetch desde el repositorio remoto.
 		fusion de la ultima version en repositorio local con nuestra vesrion actual
 		tambien se utiliza para fusionar archivos modificados en ramas separadas a la rama principal, se suele usar desde experiementos para no dañar la rama principal o para solicionar problemas como bugs
-
 
 git pull = fusion de los comandos fetch y merge
 		mantiene una version actualizada del repositorio
@@ -140,20 +102,7 @@ git remote add origin "url" = comando para agregar un origen remoto, en este cas
 
 
 
-sss
-
-
-
-
-
-
-
-
-
-
-
-
-Glosario
+			Glosario
 
 
 
@@ -162,40 +111,15 @@ repositorio = carpeta que contiene los cambios realizados a los archivos durante
 
 repositorio remoto = repositorio localizado de manera remota en algun servidor propio o alguno como github
 
-
-
-
-
-
 staging = espacio en la memoria ram donde se guardan de manera  temporal los archivos agregados mediante el comando $git add [carpeta seleccionada], para mover de la ram al disco duro o ubicacion del repositorio y guardar de forma definitiva los cambios usar $git commid -m "nota sobre los cambios
-
-"
-
-
-
-
 
 untracked = archivo que no a sido agregado a staging y por lo tanto git no puede saber si existe o tiene cambios
 
-
-
-
-
-
-
 tracked = archivo que ha sido agregado a staging y por lo tanto git conoce de su exitencia y los cambios que se realizan
 
-
-
-
-
-
-
-rama = copia del ultimo commit y la rama por default o principal es master( actualmente cambio a main), al crear mas ramas estas estaran basadas en la ultima actualizacion realizada al repositorio principal mediante $git commit -m
+rama = copia del ultimo commit y la rama por default o principal es master( actualmente cambio a main), al crear mas ramas estas estaran basadas en la ultima actualizacion 		realizada al repositorio principal mediante $git commit -m
 	hace referencia a las diferentes instancias del repositorio
-	
 	se pueden hacer tantas ramas como se quiera o sea necesario
-		
 	tambien se pueden crear ramas de una version en especifico y no necesariamente de la ultima.
 
 master = rama principal donde se encuentra toda la historia de commits
