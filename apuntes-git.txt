@@ -97,6 +97,26 @@ git branch = nos muestra las ramas que tenemos en nuestro repositorio ademas de 
 
 git remote add origin "url" = comando para agregar un origen remoto, en este caso usamos una url de github
 
+git remote set-url "repositorio" = nos permite cambiar la direccion del repositorio remoto usando la direcion y protocolos desdeados
+								en nuestro caso se uso para cambiar la url https por una url ssh
+
+		$git remote set-url "repositorio"
+			remote -- se refiere al repositorio remoto
+			set-url -- indica que se va a cambiar la direccion web donde esta el repositorio elegido
+			repositorio -- indica si se cambiara la url de fetch o push, para cambiar ambos se usa el nombre del repositorio que aparece antes de fetch y push con el comando $git remote -v
+
+
+
+ssh-keygen = comando para crear las llaves privadas y publicas
+
+		$ssh-keygen -t rsa -b 4096 -C "user@email.com"
+				-t indica el algoritmo que se va a usar
+				-b que tan compleja sera la llave
+				-C indica el correco al que estara conectada la llave
+
+eval $(ssh-agent -s) = revisar si el servidor de llaves ssh esta prendido, este proceso se encarga de revisar que las llaves esten corriendo y realizar la conexion doble
+
+ssh-add = agregar llave al entorno, que el sistema operativo sabe que la llave existe
 
 
 
@@ -127,3 +147,11 @@ master = rama principal donde se encuentra toda la historia de commits
 head = hace referncia a la version (commit) mas reciente en la rama
 
 historias = conjunto de commits
+
+llave publica = cifran el mensaje que se envia al propietario de la llave privada
+
+llave privada = permite visualisar el mensaje cifrado por la llave publica
+
+protocolo ssh = conexion segura utilizada de manera bidireccional usando llaves publicas y privadas de ambos usuarios.
+
+passphrase = contraseña adicional de texto para la llave publica y privada
