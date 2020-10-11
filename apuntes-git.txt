@@ -108,6 +108,28 @@ git checkout = comando que nos permite visualisar la version de nuestra eleccion
 	$git checkout master archivo.txt 
 		nos regresa a la version actual del archivo sin agregar modificaciones
 
+git clone url = comando que nos permite clonar la carpeta master del repositorio remoto en nuestro equipo, tanto el directorio de trabajo como el repositorio local junto a los cambios histricos se clonan igual
+
+git push = envia todo cambio que hayamos realizado en nuestro repositorio local al repositorio remoto, tener en cuenta que puede saltar algun conflicto si varias personas editaron el mismo archivo pero con diferentes valores
+
+git fetch = trae desde el repositorio remoto atualizaciones o modificaciones hechas en dicho repositorio a nuestro repositorio local pero no actualiza nuestro directorio de trabajo
+
+git merge = actualiza nuestros archivos locales del directorio local con el repositorio local el cual se actualizo con fetch desde el repositorio remoto.
+		fusion de la ultima version en repositorio local con nuestra vesrion actual
+
+git pull = fusion de los comandos fetch y merge
+		mantiene una version actualizada del repositorio
+
+
+
+
+
+
+
+
+
+
+
 sss
 
 
@@ -127,6 +149,8 @@ Glosario
 
 repositorio = carpeta que contiene los cambios realizados a los archivos durante y al final del proyecto
 	base de datos de cambios historicos
+
+repositorio remoto = repositorio localizado de manera remota en algun servidor propio o alguno como github
 
 
 
