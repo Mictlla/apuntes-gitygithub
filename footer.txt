@@ -1,0 +1,4 @@
+creando el documento de prueba footer en la rama footer
+para realizar el ejercicio de flujo de trabajo con github
+usando los comandos push, pull, checkout
+sobre las ramas master, header y footer
