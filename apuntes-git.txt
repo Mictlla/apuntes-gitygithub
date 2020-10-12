@@ -46,6 +46,10 @@ git show archivo = comando que muestra los ultimos cambios realizados al documen
 
 	$git show-ref --tags =nos muestra a que commit esta asignado el cada tag
 
+	$git show-branch = muestra ramas existentes y su historia
+
+	$git show-branch --all = mayor detade en el historial de las ramas.
+
 
 git diff = comando para ver las diferencias entre cambios realizados
 	para comparar los cambios se debe seleccionar el tag del commit mostrado por el comando $git log archivo.txt de los 2 archivos que se quieren comparar.
@@ -95,6 +99,8 @@ git fetch = trae desde el repositorio remoto atualizaciones o modificaciones hec
 git merge = actualiza nuestros archivos locales del directorio local con el repositorio local el cual se actualizo con fetch desde el repositorio remoto.
 		fusion de la ultima version en repositorio local con nuestra vesrion actual
 		tambien se utiliza para fusionar archivos modificados en ramas separadas a la rama principal, se suele usar desde experiementos para no dañar la rama principal o para solicionar problemas como bugs
+	$git merge rama = en rama se coloca la rama de donde vamos a traer los cambios
+
 
 git pull = fusion de los comandos fetch y merge
 		mantiene una version actualizada del repositorio
@@ -142,11 +148,13 @@ git tag -a version -m "nota" tagcommit= nos permite agregar versiones a nuestro 
 		le indicamos al origen (repositorio remoto) que tome como referencia el tag de nuestro repositrio local conectando en ambos repositorios la indicacion donde se borró el tag 
 		indicado en el comando $git tag -d 
 
-	
+	$gitk = nos abre en un software mas visual las ramas, sus cambios, su historia en general pero no se recomienda su uso de manera reiterada.
+
+
+
+
 
 			Glosario
-
-
 
 repositorio = carpeta que contiene los cambios realizados a los archivos durante y al final del proyecto
 	base de datos de cambios historicos
@@ -164,6 +172,9 @@ rama = copia del ultimo commit y la rama por default o principal es master( actu
 	se pueden hacer tantas ramas como se quiera o sea necesario
 	tambien se pueden crear ramas de una version en especifico y no necesariamente de la ultima.
 
+	las ramas se crean con $git branch nombre-rama
+	y estas ramas se puden enviar al repositorio remoto con $git push repositorio-remoto nombre-rama-creada
+	
 master = rama principal donde se encuentra toda la historia de commits
 
 head = hace referncia a la version (commit) mas reciente en la rama
