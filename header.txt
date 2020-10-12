@@ -1,0 +1,3 @@
+documento de prueba para el ejercicio
+de merge en ramas separadas usando git
+y el repositorio remoto de github
