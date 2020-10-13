@@ -202,3 +202,12 @@ alias = se usan para ejecutar de manera mas rapida un conjunto de variables
 		de esta forma cada vez que escribamos arbolito se ejecutara todo el comando colocado en comillas ""
 
 		estos alias por lo general solo trabajan con la sesion actual de trabajo, si se cierra la sesion el alias y su configuracion desaparece pero es posible hacer de un alias un shortcut permanente.
+
+titulos comunes para las ramas al trabajar en un entorno profesional
+	servdor de produccion = principal
+	servidor de desarrollo o staging = pruebas
+	feature
+
+pull request = estado intermedio antes de acpetar el merge, puede ser aceptado o no en el repositorio remoto
+		tambien pueden hacer pull request terceros al proyecto si es publico
+
